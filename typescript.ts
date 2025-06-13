@@ -3,7 +3,7 @@
 // console.log("Sagar");
 // console.log(user.email);
 
-//! Types (Primitive --> number ,string, boolean)
+// TODO Types (Primitive --> number ,string, boolean)
 
 // let userID:number = 33; 
 // let userId:number = 33.0980; //? Here Float and Integers are treated as same as number 
@@ -61,4 +61,34 @@
 // arr.map((name):string => {
 //     return `function is ${name}`;
 // })
+
+// function fail(msg:string):never { //! This is the function which will never return anything
+//     throw new Error(msg);
+// }
+
+// TODO Objects in Typescript
+
+
+// function createUser({name:string, isPaid:boolean}) {}
+// let newUser = {name:"sagar",isPaid:false,email:"s@gmail.dev"};
+// createUser(newUser); //! This will not give error even though email is not defined in function defination
+// createUser({name:"sagar",isPaid:false,email:"s@gmail.dev"}) //! This will give error that email is not present in function parameter
+
+
+// function createCourse():{name:string,price:number} {
+//     return {name:"react",price:399};
+// }
+
+// // TODO Type Aliases
+// type User = {  //? Defining own datatype like (type)
+//     name:string;
+//     email:string;
+//     isActive:boolean;
+// }
+// function createUser(user:User):User {
+//     return {name:"",email:"",isActive:false};
+// }
+// createUser({name:"",email:"",isActive:true})
+
+
 export {}
