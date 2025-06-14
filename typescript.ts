@@ -79,8 +79,9 @@
 //     return {name:"react",price:399};
 // }
 
-// // TODO Type Aliases
+//  TODO Type Aliases and readonly 
 // type User = {  //? Defining own datatype like (type)
+//     readonly _id:string;  //? {Created an id which is only for readonly}
 //     name:string;
 //     email:string;
 //     isActive:boolean;
@@ -90,5 +91,13 @@
 // }
 // createUser({name:"",email:"",isActive:true})
 
+// let myUser:User = {
+//     _id:"1234",
+//     name:"Sagar",
+//     email:"sagar@gmail.com",
+//     isActive:false
+// }
+// myUser.email = ""; //* This will work 
+// myUser._id = "24"; //! This will not work since _id 
 
 export {}
