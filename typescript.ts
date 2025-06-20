@@ -92,12 +92,28 @@
 // createUser({name:"",email:"",isActive:true})
 
 // let myUser:User = {
-//     _id:"1234",
+//     _id:"1234" readonly,
 //     name:"Sagar",
 //     email:"sagar@gmail.com",
 //     isActive:false
 // }
 // myUser.email = ""; //* This will work 
-// myUser._id = "24"; //! This will not work since _id 
+// myUser._id = "24"; //! This will not work since _id is readonly
+
+
+// type cardNumber = {
+//     cardnumber : string
+// }
+// type cardDate = {
+//     cardDate:string
+// }
+// type cardDetails = cardNumber & cardDate & {
+//     cvv:number
+// }  //? here '&' combines multiple types into one → intersection type
+
+let score: number | string | boolean = 33; //? This is the concept of UNION(|)
+score = 66;
+score = "88";
+score = true;
 
 export {}
