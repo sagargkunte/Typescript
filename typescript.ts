@@ -111,9 +111,34 @@
 //     cvv:number
 // }  //? here '&' combines multiple types into one → intersection type
 
-let score: number | string | boolean = 33; //? This is the concept of UNION(|)
-score = 66;
-score = "88";
-score = true;
+// let score: number | string | boolean = 33; //? This is the concept of UNION(|)
+// score = 66;
+// score = "88";
+// score = true;
+
+// function getDbId(id:number | string) {
+//     console.log(`DB id is ${id}`);
+// }
+// getDbId(6); //* This is also valid 
+// getDbId('6'); //* This is also valid 
+
+// function getDbId(id:number | string) {
+// id.toUpperCase(); //! Error becuase here {id} is a type of new data type
+//     if(typeof id =="string") {
+//         id.toUpperCase();
+//     }
+    
+//     console.log(`DB id is ${id}`);
+// }
+
+//TODO Arrays in TypeScript
+// const data:number[] = [1,2,3,4,4]; //* Array of number ,only numbers are allowed
+// const data:string[] = ["a","b","c"]; //* Array of string, only strings 
+// const data: (string | number | boolean)[] = [1,2,3,'4','5',true]; //* Combination of string,number and boolean 
+
+// let pi:3.14 = 3.14; //! here 3.14 is acts as type the value of pi should be 3.14 as assigned here
+// let seatAllotment: "aisle" | "middle" | "window";
+// seatAllotment = 'aisle'; //! Error
+
 
 export {}
